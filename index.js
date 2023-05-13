@@ -215,3 +215,116 @@ console.log(total);
  */
 
     
+// var vs let vs const
+/*
+var age_2 = 10;
+var age_2 = 20;
+console.log(age_2);
+*/
+
+/*let age_2 = 10;
+age_2 = 20;*/
+
+/**
+    const age_2 = 10;
+    age_2 = 20;
+ */
+
+// Scope of var, let and const
+/*
+var age_2 = 10;
+if (true) {
+    var age_2 = 20;
+    console.log(age_2);
+}
+console.log(age_2);*/
+
+/*
+let age_2 = 10;
+if (true) {
+    let age_2 = 20;
+    console.log(age_2);
+}
+console.log(age_2);*/
+
+/*
+const age_2 = 10;
+if (true) {
+    const age_2 = 20;
+    console.log(age_2);
+}
+console.log(age_2);*/
+
+
+// Arrays
+/*
+let ages = [10,20,30];
+ages = [20,40,50];
+ages.push(70)
+console.log(ages);
+*/
+/*
+const ages = [10,20,30];
+ages.push(70)
+console.log(ages);
+*/
+
+/*
+const persona = {
+    name: "Camilo",
+    lastName: "Puello",
+    age:24
+}
+
+persona.name = "Luis"
+console.log(persona);*/
+
+// Functions
+/*
+function to_sum (num_one, num_two){
+    console.log(num_one+num_two);
+}
+to_sum(4,5);*/
+
+// Arrow function
+
+const to_sum = (num_one,name_two) => {
+        console.log(num_one + name_two);
+}
+to_sum(4,5);
+
+const greet = () => {
+    console.log("Hello world");
+}
+
+const square = base => {
+    console.log(base ** square);
+}
+
+const sum_two = (num_one,name_two) => {
+    return num_one,name_two;
+}
+console.log(sum_two(2,5));
+
+const sum_three = (num_one,name_two) => num_one + name_two;
+console.log(sum_three(2,5));
+
+
+
+// Template String
+
+// backtick
+const sqr = (base, exponent) => `The result is: ${base**exponent}`
+console.log(sqr(2,2));
+
+// destructuring objects
+
+const pet={
+    name:'Tom',
+    age:5,
+    live:true,
+    races:['Pastor Alemán','Pitbull']
+}
+
+console.log(pet.name);
+
