@@ -328,3 +328,79 @@ const pet={
 
 console.log(pet.name);
 
+
+const data = [
+    {
+        title:'Learning Javascript',
+        year: '2021',
+        isbn: '994-223-4527',
+        author: 'Luis Puello'
+    },
+    {
+        title:'Learning Python',
+        year: '2018',
+        isbn: '994-555-4527',
+        author: 'Luis Puello'
+    },
+    {
+        title:'Learning Ruby',
+        year: '2019',
+        isbn: '994-223-3333',
+        author: 'Luis Puello'
+    },
+];
+/*
+function getData(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(data);
+        }, 1000)
+    })
+}*/
+
+//const getData = () => data;
+/*
+const getData = () => {
+    setTimeout(()=>{
+        return data;
+    }, 1000);
+}
+*/
+
+/*dato = getData();
+console.log(dato);*/
+
+//getData().then((response) => console.log(response));
+
+
+// Async And Await (syntactic sugar)
+/*
+function getData(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(data);
+        }, 1000)
+    })
+}
+
+async function get_information(){
+    const books = await getData();
+    console.log(books);
+}
+
+get_information();*/
+
+/*
+const getCharacter = async () => {
+    try{
+        const answer = await fetch("https://rickandmortyapi.com/api/character");
+        const data = await answer.json();
+        const result = data.results;
+        console.log(result);
+    }catch(error){
+        console.log(error);
+    }
+}
+
+getCharacter();
+*/
