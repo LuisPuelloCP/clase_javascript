@@ -150,3 +150,68 @@ console.log('hello' > 1); // false
 console.log(null == undefined); // true Javascript error
 console.log(0 == false); // true
 console.log('0' == false); // true
+
+
+
+// statement if
+
+/*
+if (condition){
+
+}else if (condition){
+
+}else{
+
+}
+*/
+
+
+// statement line if
+
+// if (condition) console.log('Message')
+
+// ternary operator
+// condition ? expected operation : false operation
+
+
+total = 4 > 5 ? 'Is true': 'Is False';
+console.log(total);
+
+
+// while
+/*
+    while(condition){
+
+    } 
+*/
+
+// Do While
+
+/** 
+    do{
+
+    }while(condition)
+*/
+
+// FOR
+
+/**
+    for(start; stop condition; increment){
+
+    }
+ */
+
+// switch
+
+/**
+    switch(value){
+        case value1:
+            break;
+        case value2:
+            break;
+        default:
+            break;
+    }
+ */
+
+    
